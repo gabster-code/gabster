@@ -94,7 +94,7 @@ const Navbar = () => {
                 <div>
                     <div className='flex w-full items-center justify-between'>
                     <Link href='/'> 
-                    <Image onClick={()=> setNav(false)} className='cursor-pointer' src="/../public/assets/logo.png" alt='/' width='50' height='50'/>
+                    <Image onClick={()=> setNav(false)} className='cursor-pointer' src={NavLogo} alt='/' width='50' height='50'/>
                      </Link>
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                             <AiOutlineClose/>
