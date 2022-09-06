@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React from 'react'
 
 const About = () => {
   return (
-    <div className='w-full md:h-screen p-2 flex items-center py-16 bg-[#E8E8E8]'>
+    <div id='about' className='w-full md:h-screen p-2 flex items-center py-8 bg-[#E8E8E8]'>
         <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
             <div className='col-span-2'>
                 <p className='uppercase text-xl tracking-widest text-[#0c7feb]'>About</p>
@@ -22,7 +23,7 @@ const About = () => {
                     as I believe that the Web3 Space is still growing and a lot more innovation will come from those who start now. 😎
                     
                 </p>
-                <p className='py-2 text-gray-600 underline cursor-pointer'>See some of my Latest Projects Here!</p>
+                <Link href='/#projects'><p className='py-2 text-gray-600 underline cursor-pointer'>See some of my Latest Projects Here!</p></Link>
                 
             </div>
             <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>

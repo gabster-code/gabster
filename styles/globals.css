@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+  font-family: Montserrat;
+}
+
 @layer base{
   
   body {
-    @apply bg-[#F4F4F2] tracking-wide
+    @apply bg-[#F4F4F2]  text-[#333333] tracking-wide
   }
 
   h1,h2,h3,h4,h5,h6 {
@@ -25,6 +30,20 @@
   }
 
   button{
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#495464] to-[#647286]
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#0c7feb] to-[#6f97ee]
   }
+  input[type="email"] {
+    appearance: none;
+  
+    width: 100%;
+    margin: 0;
+  
+    font-family: inherit;
+    font-size: 90%;
+  
+    box-sizing: border-box;
+  }
+ 
+  
+  
 }
