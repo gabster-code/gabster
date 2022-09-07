@@ -6,7 +6,7 @@ const resume = () => {
   return (
     <>
       <Head>
-        <title>Clint | Resume</title>
+        <title>Gab | Resume</title>
         <meta
           name='description'
           content='I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences.'
@@ -17,17 +17,17 @@ const resume = () => {
       <div className='max-w-[940px] mx-auto p-2 pt-[120px]'>
         <h2 className='text-center'>Resume</h2>
         <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
-          <h2 className='text-center'>Clint Briley</h2>
+          <h2 className='text-center'>Gab Jornacion</h2>
           <div className='flex'>
             <a
-              href='https://www.linkedin.com/in/clint-briley-50056920a/'
+              href='https://www.linkedin.com/in/kevin-karl-jornacion-ab94aa8b/'
               target='_blank'
               rel='noreferrer'
             >
               <FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
             </a>
             <a
-              href='https://github.com/fireclint'
+              href='https://github.com/gabster-code'
               target='_blank'
               rel='noreferrer'
             >
@@ -38,18 +38,18 @@ const resume = () => {
         <div className='text-center py-4 text-xl font-bold uppercase tracking-wider'>
           <div className='hidden sm:block'>
             <p>
-              Proven Leadership <span className='px-1'>|</span> Web Development{' '}
+              Proven Leadership <span className='px-1'>|</span> Web and IT Infrastructure Development{' '}
               <span className='px-1'>|</span> Complex Problem Solving
             </p>
           </div>
           <div className='block sm:hidden'>
             <p>Proven Leadership</p>
-            <p className='py-2'>Web Development</p>
+            <p className='py-2'>Web and IT Infrastructure Development</p>
             <p>Complex Problem Solving</p>
           </div>
         </div>
         <p>
-          Analytical, innovative, and motivated web development professional
+          Analytical, innovative, and motivated IT professional
           with experience in customer service, team leadership, and
           organizational effectiveness in fast-paced and challenging
           environments. Adept at developing strategies and driving streamlined
@@ -69,108 +69,85 @@ const resume = () => {
             <span className='px-2'>|</span> HTML <span className='px-2'>|</span>
             CSS <span className='px-2'>|</span>React
             <span className='px-2'>|</span>Tailwind
-            <span className='px-2'>|</span> Firebase
+            <span className='px-2'>|</span> MongoDB
           </p>
-          <p className='py-2'>
+         {/**
+          * <p className='py-2'>
             <span className='font-bold'>Amazon Web Services</span>
             <span className='px-2'>|</span>Amazon Web Services Cloud
             Practitioner
           </p>
+          * 
+          */} 
         </div>
 
         <h5 className='text-center underline text-[18px] py-4'>
           Professional Experience
         </h5>
+      {/* Experience */}
+      <div className='py-6'>
+          <p className='italic'>
+            <span className='font-bold'>Discord Bot Development</span>
+            <span className='px-2'>|</span>Philippines
+          </p>
+          <p className='py-1 italic'>Personal Projects(2021 - 2022)</p>
+          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
+            <li>
+              Created Custom Discord Bots for NFT Pinas, Fibonaxie Guild, Gratitude Gang, Cash Cows
+            </li>
+            <li>
+              Utilized DiscordJS, NodeJS and REPLIT for Developing Discord Bots. 
+            </li>
+            <li>
+              Utilizes APIs from Web3 sources to provide either Sales/Listing of NFTs, Generating QR Access and stats for Axie Infinity Game players, alerting for low gas fees on ETH
+            </li>
+          </ul>
+        </div>
+
+        {/* Experience */}
+        <div className='py-6'>
+          <p className='italic'>
+            <span className='font-bold'>NFT Pinas</span>
+            <span className='px-2'>|</span>Philippines
+          </p>
+          <p className='py-1 italic'>Co-Founder/Content Creator (2021 - 2022)</p>
+          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
+            <li>
+              Created Educational Content on social media(IG, FB, Spotify, Twitter, Anchor) about Web3
+            </li>
+            <li>
+              Cultivated a community of NFT/Crypto enthusiasts and bring them together to share, explore and educate others about the Web3 space.
+            </li>
+            <li>
+              Became a platform for NFT Projects to share their story though podcasts and hosted twitter spaces
+            </li>
+          </ul>
+        </div>
+
         {/* Experience */}
         <div className='py-6'>
           <p className='italic'>
             <span className='font-bold italic'>
-              BIGCOMMERCE, SHOPIFY, WOOCOMMERCE
+              StrategicSynergy Inc.
             </span>
-            <span className='px-2'>|</span>Dallas, TX
+            <span className='px-2'>|</span>Makati, Philippines
           </p>
-          <p className='py-1 italic'>Freelance Work (2013 - Current)</p>
+          <p className='py-1 italic'>Solutions Architect (2013 - Current)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
-              Ensured comprehensive mobile responsive UI layouts with
-              understanding of HTML, CSS, and JavaScript.
+              Gather, analyze and translate customer pain points and requirements into a carefully crafted solution using various appropriate technologies that we carry
             </li>
             <li>
-              Troubleshoot issues and concerns, configure operation and analytic
-              plugins, and design changes as needed.
+             Identifies business opportunities with aligned interests to customers business objectives, goals and requirements
             </li>
             <li>
-              Worked directly with a diverse client base to understand and
-              implement multiple technologies and programs.
+            •	Provide technology roadmaps and solution alternatives that balances both commercial aspects and architectural aspects
             </li>
-            <li>
-              Platform migration managing DNS servers as well as MX records and
-              ensuring a smooth migration process.
-            </li>
+           
           </ul>
         </div>
-        {/* Experience */}
-        <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold'>Preston EMS</span>
-            <span className='px-2'>|</span>Grayson County, TX
-          </p>
-          <p className='py-1 italic'>Paramedic (2019 - Current)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Lead paramedic on an ALS 911 ambulance covering rural Grayson
-              County.
-            </li>
-            <li>
-              Work surrounding departments organizing treatment protocols and
-              facilitate hands on training operations.
-            </li>
-            <li>
-              Manage high stress 911 situations such as medical emergencies,
-              traumatic emergencies, and water accidents
-            </li>
-            <li>
-              Public outreach and relations for the municipality from healthcare
-              awareness to training methods.
-            </li>
-          </ul>
-        </div>
-        {/* Experience */}
-        <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold'>CITY OF SHERMAN, TX</span>
-            <span className='px-2'>|</span>Sherman, TX
-          </p>
-          <p className='py-1 italic'>Paramedic / Firefighter (2010 – 2019)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Ensured proper implementation of firefighting techniques and
-              practices including controlling and extinguishing fires, operating
-              hose lines, and fire ground operations, ventilation, and search
-              and rescue.
-            </li>
-            <li>
-              Oversaw comprehensive understanding, operation, and maintenance of
-              fire engines, ladder trucks, technical rescue apparatus, and
-              response trailers.
-            </li>
-            <li>
-              Performed ALS techniques as needed within emergency situations
-              including the use of an esophageal or dual lumen airway device and
-              oral intubation using laryngoscopy.
-            </li>
-            <li>
-              Collaborated with a talented and high performing team of
-              firefighters in high pressure and stressful situations as needed.
-            </li>
-            <li>
-              Utilized proven and demonstrated knowledge of multiple
-              certifications including Pediatric Advanced Life Support,
-              Prehospital Trauma Life Support, and Advanced Cardiac Life
-              Support, among others.
-            </li>
-          </ul>
-        </div>
+        
+        
       </div>
     </>
   );
