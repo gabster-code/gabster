@@ -16,4 +16,9 @@ Target is to learn NextJS as a react framework and also learn about tailwindCSS 
 ## Deployed via Vercel
 https://www.gabjornacion.dev - Official Link (Domain Not Yet Connected)
 
-
+## Plans
+- [x] Initial Design and Code of Portfolio Website
+- [ ] Mock up new design
+- [ ] Add Blog functionality
+- [ ] Code New Design
+- [ ] Add new projects

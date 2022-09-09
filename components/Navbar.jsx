@@ -79,6 +79,7 @@ const Navbar = () => {
                 <Link href='/#skills'><li className='ml-10 text-sm uppercase hover:border-b'><a>Skills</a></li></Link>
                 <Link href='/#projects'><li className='ml-10 text-sm uppercase hover:border-b'><a>Projects</a></li></Link>
                 <Link href='/#contact'><li className='ml-10 text-sm uppercase hover:border-b'><a>Contact</a></li></Link>
+                <Link href='/#[blog]'><li className='ml-10 text-sm uppercase hover:border-b'><a>Blog(Coming Soon!)</a></li></Link>
             </ul>
             <div onClick={handleNav} className='md:hidden text-white'>
                 <AiOutlineMenu size={25} />
@@ -111,6 +112,7 @@ const Navbar = () => {
                         <Link href='/#skills'><li  onClick={()=> setNav(false)}className='py-4 text-sm'>Skills</li></Link>
                         <Link href='/#projects'><li onClick={()=> setNav(false)} className='py-4 text-sm'>Projects</li></Link>
                         <Link href='/#contact'><li onClick={()=> setNav(false)} className='py-4 text-sm'>Contact</li></Link>
+                        <Link href='/#blog'><li onClick={()=> setNav(false)} className='py-4 text-sm'>Blog(Coming Soon!)</li></Link>
                     </ul>
                     <div className='pt-40'>
                         <p className='uppercase tracking-widest text-[#5651e5]'>Connect with Me!</p>
