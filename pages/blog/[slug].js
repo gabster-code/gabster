@@ -16,9 +16,9 @@ import Form from '../../components/blog/form'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
-  /* if (!router.isFallback && !post?.slug) {
+  if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
-  } */
+  }
   return (
     <Layout preview={preview}>
       <Container>
