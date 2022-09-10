@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import cn from 'classnames'
 import Link from 'next/link'
-import { urlForImage } from '../helper/sanity'
+import { urlForImage } from '../../helper/sanity'
 
 export default function CoverImage({ title, url, imageObject, slug }) {
   const image = (
