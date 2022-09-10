@@ -1,24 +1,24 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import Container from '../../../components/blog/container'
-import PostBody from '../../../components/blog/post-body'
-import MoreStories from '../../../components/blog/more-stories'
-import Header from '../../../components/blog/header'
-import PostHeader from '../../../components/blog/post-header'
-import Comments from '../../../components/blog/comments'
-import SectionSeparator from '../../../components/blog/section-separator'
-import Layout from '../../../components/blog/layout'
-import { getAllPostsWithSlug, getPostAndMorePosts } from '../../../helper/api'
-import PostTitle from '../../../components/blog/post-title'
+import Container from '../../components/blog/container'
+import PostBody from '../../components/blog/post-body'
+import MoreStories from '../../components/blog/more-stories'
+import Header from '../../components/blog/header'
+import PostHeader from '../../components/blog/post-header'
+import Comments from '../../components/blog/comments'
+import SectionSeparator from '../../components/blog/section-separator'
+import Layout from '../../components/blog/layout'
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../../helper/api'
+import PostTitle from '../../components/blog/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../../helper/constants'
-import Form from '../../../components/blog/form'
+import { CMS_NAME } from '../../helper/constants'
+import Form from '../../components/blog/form'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
-  if (!router.isFallback && !post?.slug) {
+  /* if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
-  }
+  } */
   return (
     <Layout preview={preview}>
       <Container>
@@ -57,6 +57,7 @@ export default function Post({ post, morePosts, preview }) {
 
 export async function getStaticProps({ params, preview = false }) {
   const data = await getPostAndMorePosts(params.slug, preview)
+
   return {
     props: {
       preview,
@@ -69,6 +70,7 @@ export async function getStaticProps({ params, preview = false }) {
 
 export async function getStaticPaths() {
   const allPosts = await getAllPostsWithSlug()
+  console.log(JSON.stringify(allPosts, null, 2))
   return {
     paths:
       allPosts?.map((post) => ({
