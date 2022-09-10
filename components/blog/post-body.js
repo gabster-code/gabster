@@ -6,9 +6,9 @@ export default function PostBody({ content }) {
   return (
 
     // eslint-disable-next-line react/jsx-no-duplicate-props
-    <div className="mx-auto max-w-2xl" style={Styles.markdown} >
-      <SanityBlockContent blocks={content} />
-    </div>
+    <div className="max-w-2xl mx-auto" >
+    <PortableText value={content} />
+  </div>
   )
 }
 

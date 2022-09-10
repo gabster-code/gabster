@@ -1,3 +1,4 @@
+import { AiOutlineConsoleSql } from 'react-icons/ai'
 import client, { previewClient } from './sanity'
 
 const getUniquePosts = (posts) => {
@@ -68,7 +69,7 @@ export async function getPostAndMorePosts(slug, preview) {
           _createdAt
         }
       }`,
-        { slug }
+        { slug } 
       )
       .then((res) => res?.[0]),
     curClient.fetch(
@@ -79,5 +80,7 @@ export async function getPostAndMorePosts(slug, preview) {
       { slug }
     ),
   ])
+
+  console.log("Post.Comment: ", post.comments)
   return { post, morePosts: getUniquePosts(morePosts) }
 }
