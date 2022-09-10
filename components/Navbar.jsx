@@ -85,7 +85,7 @@ const Navbar = () => {
                 <AiOutlineMenu size={25} />
             </div>
         </div>
-        </div>
+      </div>
         
         <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
             <div className={
