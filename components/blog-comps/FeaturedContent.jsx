@@ -8,7 +8,7 @@ const FeaturedContent = () => {
     let excerpt= "This is a wider card with supporting ASDASDASDASDASdtext below as a natural lead-in to additional content. This content is a little bit longer."
     let dateposted='Last updated 3 mins ago'
     return (
-        <div className=''>
+        <div className='flex flex-row md:flex-col  m-10 gap-4 '>
             
                         
                         <FeaturedCard 
@@ -17,12 +17,14 @@ const FeaturedContent = () => {
                             excerpt={excerpt}
                             dateposted={dateposted} 
                         />
+
                         <FeaturedCard 
                             title={title}
                             image={image} 
                             excerpt={excerpt}
                             dateposted={dateposted} 
                         />
+
                         <FeaturedCard 
                             title={title}
                             image={image} 
@@ -31,7 +33,7 @@ const FeaturedContent = () => {
                         />
                     
                     
-                    </div>
+         </div>
                  
            
   )
