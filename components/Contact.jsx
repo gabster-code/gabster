@@ -4,6 +4,7 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaExclamationCircle, FaGithub, FaLinkedin,  } from 'react-icons/fa'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Contact = () => {
 //Email Form States
@@ -97,7 +98,8 @@ const Contact = () => {
             <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
               <div className='lg:p-4 h-full rounded-xl'>
                 <div>
-                  <img className='rounded-xl hover:scale-105 ease-in duration-300' src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="" />
+                  <img className='rounded-xl hover:scale-105 ease-in duration-300' src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt=""/>
+                  
                 </div>
                 <div>
                   <h2 className='py-2'>Gab Jornacion</h2>
