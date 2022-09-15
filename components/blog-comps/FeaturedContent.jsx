@@ -9,7 +9,7 @@ const FeaturedContent = () => {
     let dateposted='Last updated 3 mins ago'
     return (
         <>
-        <h1 className='mt-4 sm:max-w-sm ml-[30%] sm:mx-auto md:ml-[40.5%] lg:max-w-full '>Featured</h1>
+        <h1 className='flex flex-center justify-center  '>Featured</h1>
         <div className='px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"'>
             <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
                         

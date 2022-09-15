@@ -1,12 +1,18 @@
+import Image from 'next/image'
 import React from 'react'
 
 const FeaturedCard = ({title, image, excerpt, dateposted}) => {
   return (
     <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-      <img
+      <Image 
        src={image}
        className="object-cover w-full h-64"
-       alt=""/>   
+       alt=""
+       width={120}
+       height={60}
+       ></Image>
+       
+        
 
                  <div className="p-5 border border-t-0">
             <p className="mb-3 text-xs font-semibold tracking-wide uppercase">

@@ -19,7 +19,7 @@ const BlogNav = () => {
       <div className='flex justify-around items-center w-full h-full pt-4'>
       <BlogNavLogo />
      
-        <div onClick={handleNav} className='md:hidden mr-10'>
+        <div onClick={handleNav} className='md:hidden mr-3'>
                 <AiOutlineMenu size={25} />
         </div>
       </div>
