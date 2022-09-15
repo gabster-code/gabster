@@ -30,7 +30,7 @@ const About = () => {
                 <img className='rounded-xl' src="https://images.unsplash.com/photo-1642083139428-9ee5fa423c46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
             </div>
         </div>
-    </div>
+    </div> 
   )
 }
 
