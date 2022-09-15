@@ -4,13 +4,13 @@ import React from 'react'
 const FeaturedCard = ({title, image, excerpt, dateposted}) => {
   return (
     <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-      <Image 
+      <img 
        src={image}
        className="object-cover w-full h-64"
        alt=""
-       width={120}
-       height={60}
-       ></Image>
+      
+       
+       />
        
         
 
