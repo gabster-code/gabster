@@ -5,7 +5,7 @@ import React from 'react'
 import propertyImg from '../public/assets/projects/property.jpg'
 import cryptoImg from '../public/assets/projects/crypto.jpg'
 import netflixImg from '../public/assets/projects/netflix.jpg'
-import twitchImg from '../public/assets/projects/twitch.jpg'
+import keyskdImg from '../public/assets/projects/keyskd.jpg'
 import comingImg from '../public/assets/projects/comingsoon.png'
 
 import ProjectItem from './ProjectItem'
@@ -18,25 +18,29 @@ const Projects = () => {
             <h2 className='py-4'>What I've Built</h2>
             <div className='grid md:grid-cols-2 gap-8'>
 
-             <ProjectItem 
+                <ProjectItem 
+                title="Keyskd's NFT Landing Page "
+                backgroundImg={keyskdImg} 
+                projectUrl='/keyskd'
+                techStack='NextJS | Tailwind CSS | Javascript' />
+
+                <ProjectItem 
                 title='Test Page' 
                 backgroundImg={comingImg} 
-                projectUrl='/crypto' />
-
-              <ProjectItem 
-                title='Placeholder' 
-                backgroundImg={comingImg} 
-                projectUrl='/' />
+                projectUrl='/crypto'
+                techStack='' />
 
                 <ProjectItem 
                 title='Placeholder' 
                 backgroundImg={comingImg} 
-                projectUrl='/' />
+                projectUrl='/'
+                techStack='' />
 
                 <ProjectItem 
                 title='Placeholder' 
                 backgroundImg={comingImg} 
-                projectUrl='/' />
+                projectUrl='/'
+                techStack='' />
 
 
             </div>
@@ -44,6 +48,5 @@ const Projects = () => {
     </div>
   )
 }
-// https://youtu.be/CMx51wpd7g4?t=4245
-//
+
 export default Projects
